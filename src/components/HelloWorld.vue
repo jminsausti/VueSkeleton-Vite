@@ -1,7 +1,19 @@
+<template>
+  <div>
+    <h1 class="green">{{ msg }}</h1>
+    <h2>ESTÁS EN HELLOWORLD</h2>
+    <h3>
+      Cuerpo del componente HelloWorld!!    
+    </h3>
+    <OtroComponente/>
+  </div> 
+</template>
+
 <script>
+import OtroComponente from './OtroComponente.vue';
   export default {
       name: 'HelloWorld',
-      components: {},
+      components: {OtroComponente},
       props: {
         msg: {
           type: String,
@@ -20,20 +32,16 @@
 </script>
 
 
-<template>
-  <div>
-    <h1 class="green">{{ msg }}</h1>
-    <h2>ESTÁS EN HELLOWORLD</h2>
-    <h3>
-      Cuerpo del componente HelloWorld!!    
-    </h3>
-  </div> 
-</template>
+
 
 <style scoped>
+
 div{
   text-align: center;
+  border: solid 1px blue;
 }
+
+
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
