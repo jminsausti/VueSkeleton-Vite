@@ -38,7 +38,7 @@ import OtroComponente from './OtroComponente.vue';
 
 div{
   text-align: center;
-  border: solid 1px blue;
+  border: solid 2px blue;
 }
 
 
